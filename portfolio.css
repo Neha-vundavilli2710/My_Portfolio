@@ -38,30 +38,24 @@ a { text-decoration: none; color: var(--accent); }
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo left, menu right */
-  background: #fff;
-  padding: 14px 60px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  justify-content: space-between; /* logo left, links right */
+  background-color: #fff;
+  padding: 12px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* Logo */
 .logo {
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #004d40;
 }
 
-/* Nav links */
 .nav-links {
+  list-style: none;
   display: flex;
   align-items: center;
-  gap: 40px;  /* increased spacing between items */
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 28px;   /* even spacing between links */
+  margin-left: auto; /* push everything to right */
 }
 
 .nav-links li {
@@ -72,27 +66,24 @@ a { text-decoration: none; color: var(--accent); }
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  transition: 0.3s;
-  padding: 6px 10px;
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #004d40;
 }
 
-/* Dropdown */
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 42px;
+  top: 40px;
   left: 0;
   background: #fff;
   list-style: none;
-  padding: 8px 0;
-  margin: 0;
-  min-width: 170px;
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-width: 160px;
+  border-radius: 5px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -103,29 +94,23 @@ a { text-decoration: none; color: var(--accent); }
   padding: 6px 20px;
 }
 
-.dropdown-menu li a {
-  display: block;
-  color: #333;
-}
-
 .dropdown-menu li a:hover {
-  background: #f5f5f5;
-  color: #004d40;
+  background-color: #f5f5f5;
 }
 
-/* Resume button */
 .resume-btn {
-  background: #004d40;
+  background-color: #004d40;
   color: #fff !important;
-  padding: 8px 20px;
+  padding: 6px 18px;
   border-radius: 6px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .resume-btn:hover {
-  background: #00695c;
+  background-color: #00695c;
 }
+
 
 /* hero section */
 .hero {
